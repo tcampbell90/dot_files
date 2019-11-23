@@ -1,0 +1,33 @@
+-- SET SESSION AUTOCOMMIT = ON;
+SET SEARCH_PATH = public, venmo_warehouse, data_prep, analytics_etl, product_prep, looker_scratch, venmo_product
+
+-- default format settings -- timing format is a little different in psql
+-- \set pager '\\pset pager'
+
+-- :pager
+\pset pager always
+\set time_default '\\timing'
+:time_default
+\set delimiter_default '\\f \'|\''
+:delimiter_default
+\set align_default '\\pset format aligned'
+:align_default
+\set HISTCONTROL ignoredups
+
+-- other settings
+\set PROMPT1 '%m [%/] %:output:%x> '
+-- \set PROMPT1 'redshift [%/] %:output:%x> '
+-- \set PROMPT1 'redshift [%/] %:expanded:%:output:%x> '
+\set PROMPT2 '>'
+-- \set PROMPT2 '%:output:%x> ' -- the output variable is set by o_start
+-- \set PROMPT2 '%:expanded:%:output:%x> ' -- the output variable is set by o_start
+\set HISTSIZE 2000
+
+-- output settings
+\set o_start '\\set QUIET \\set output output_mode \\pset footer off \\pset format unaligned \\f \'\\t\'  \\unset QUIET \\o '
+\set o_end '\\o ; \\set QUIET \\pset footer on \\unset output ' :align_default :delimiter_default '\\unset QUIET'
+
+-- expanded display prompt
+--\set xon '\\set expanded expanded_display> \\x'
+--\set xoff '\\unset expanded \\x'
+
