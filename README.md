@@ -11,6 +11,8 @@
         - For Mac:
             - install homebrew
             - install git `brew install git`
+    - use vim as git editor
+        - `git config --global core.editor vim`
 
 ### Install vim
     - must have vim (Vi IMproved) installed
