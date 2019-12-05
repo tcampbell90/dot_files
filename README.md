@@ -5,35 +5,41 @@ Configuration files for favorite CLI software vim, tmux, and psql
 
 Major inspiration from friend Samuel D Corbin: https://github.com/samueldcorbin/dotfiles
 
-## Prerequisites
+# Prerequisites
 
-### Install git
+## bash
     - Guide here for installing on Linux, Mac, and Windows: gist.github.com/derhuerst/1b15ff4652a867391f03
         - For Windows 10:
             - enable bash
-            - install Linux distro 
-            - install git for bash gitforwindows.org
-        - For Mac:
-            - install homebrew
-            - install git `brew install git`
-    - Use vim as git editor
-        - `git config --global core.editor vim`
+            - install Linux distro - Ubuntu is preference
+## bootstap.sh
+    - After being able to use a bash environment run this script to install git, tmux, vim, and postgresql    
+
+### Install git manually
+    - For bootstap.sh - or manually `apt-get install git`
+    - For Windows
+        - install git for bash gitforwindows.org
+    - For Mac:
+        - install homebrew
+        - install git `brew install git` 
 
 ### Install vim
-    - Must have vim (Vi IMproved) installed
-    - Must clone the solarized color scheme: `git clone https://github.com/altercation/vim-colors-solarized`
+    - bootstap.sh - or manually `apt-get install vim`
+        - Must have vim (Vi IMproved) installed
+        - Must clone the solarized color scheme: `git clone https://github.com/altercation/vim-colors-solarized`
 
 ### Install tmux
-
-## For Data Analysis
+    - bootstap.sh - or manually `apt-get install tmux`
 
 ### Install psql - command line sql client
-    - 
+    - bootstap.sh - or manually `apt-get install postgresql`
+
+## For Python Data Analysis 
 
 ### Install Anaconda - Python, R, Jupyter package manager for data science
     - On windows:
 
-#### Install Conda env tools 
+### conda environment creation (WIP section)
     - Create and activate conda environment
         `conda create -n myenv`
         `conda activate myenv`
