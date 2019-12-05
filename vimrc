@@ -30,7 +30,9 @@ nmap <silent> <c-c> <Esc>:set invhlsearch<CR>
 """"""""""""""
 
 let g:solarized_termcolors=256
-syntax on "option to turn syntax highlighting on
-set background=dark "background color
-colorscheme solarized "choose syntax color profile: instructions and dl of color scheme at https://github.com/altercation/vim-colors-solarized 
+syntax enable "option to turn syntax highlighting on
+    set background=dark "background color
+    colorscheme solarized "choose syntax color profile: instructions and dl of color scheme at https://github.com/altercation/vim-colors-solarized 
 hi Comment ctermfg=DarkMagenta "change syntax highlighting color of comments to DarkMargenta
+
+
