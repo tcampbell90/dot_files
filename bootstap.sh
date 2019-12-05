@@ -57,7 +57,7 @@ else
     git -C "$HOME/.dotfiles" pull
 fi
 
-dotfiles="gitignore_global tmux.conf vimrc psqlrc"
+dotfiles="gitignore_global tmux.conf vimrc"
 for file in $dotfiles; do
     if [ ! -h "$HOME/.$file" ]; then
         echo "Symlinking $file to home."
