@@ -47,14 +47,14 @@ fi
 
 echo "Updating dotfiles..."
 if [ ! -d "$HOME/.dotfiles" ]; then
-    git clone "git@github.com:tcampbell90/dotfiles.git" "$HOME/.dotfiles"
+    git clone "git@github.com:tcampbell90/dot_files.git" "$HOME/dot_files"
     # Remove loose bootstrap file
     if [ -f "bootstrap.sh" ]; then
         echo "Removing bootstrap.sh (tracked version in ~/.dotfiles/)."
         rm bootstrap.sh
     fi
     else
-    git -C "$HOME/.dotfiles" pull
+    git -C "$HOME/dot_files" pull
 fi
 
 dotfiles="gitignore_global tmux.conf vimrc psqlrc"
