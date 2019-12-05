@@ -9,7 +9,7 @@ fi
 
 echo "Updating packages..."
 sudo apt-get -y update
-sudo apt-get -y install tmux vim git unzip wget
+sudo apt-get -y install tmux vim git unzip wget postgresql
 echo "...done."
 
 if [ ! -f "$HOME/.ssh/id_rsa" ]; then
