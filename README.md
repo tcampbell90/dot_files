@@ -3,6 +3,8 @@ A guide to installing an Ubuntu based tools for command line file manipulation, 
 
 Configuration files for favorite CLI software vim, tmux, and psql
 
+Major inspiration from friend Samuel D Corbin: https://github.com/samueldcorbin/dotfiles
+
 ## Prerequisites
 
 ### Install git
