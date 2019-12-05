@@ -9,7 +9,7 @@ fi
 
 echo "Updating packages..."
 sudo apt-get -y update
-sudo apt-get -y install tmux vim git unzip wget psql
+sudo apt-get -y install tmux vim git unzip wget
 echo "...done."
 
 if [ ! -f "$HOME/.ssh/id_rsa" ]; then
